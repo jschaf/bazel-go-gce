@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service Markdown {
+  rpc Render (RenderRequest) returns (RenderResponse);
+}
+
+message RenderRequest {
+  string text = 1;
+}
+
+message RenderResponse {
+  string text = 1;
+}
